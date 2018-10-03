@@ -28,7 +28,7 @@ array && array.length ? (
 )
 ```
 
-With
+With (using lodash [isEmpty](https://lodash.com/docs/4.17.10#isEmpty) and [map](https://lodash.com/docs/4.17.10#isEmpty) as components)
 
 ```jsx
 import react from 'react'
