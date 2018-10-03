@@ -1,6 +1,4 @@
-# react-lodash
-
-[![Build Status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash)
+# react-lodash [![Build Status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash)
 
 > Lodash as React components
 
@@ -104,4 +102,3 @@ Note: documentation will be improved in the future.
 MIT
 
 [Patreon](https://www.patreon.com/typicode) - [Supporters](https://thanks.typicode.com) ✨
-
