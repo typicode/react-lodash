@@ -11,7 +11,7 @@
     "fix": "npm run lint -- --fix && prettier-markdown README.md",
     "pretest": "npm run build",
     "test": "jest",
-    "prepublishOnly": "npm run build && npm test && pkg-ok"
+    "prepublishOnly": "npm test && pkg-ok"
   },
   "repository": {
     "type": "git",
