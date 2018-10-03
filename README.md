@@ -4,11 +4,7 @@
 
 > Lodash as React components
 
-__Note:__ it's an experiment for the moment, but you're welcome to give it a try and give feedback :)
-
-## Why?
-
-This project was created mostly out of curiosity and to play with some ideas.
+This project was created mostly out of curiosity and to explore some ideas. It's an experiment for the moment, but you're welcome to give it a try and give feedback :)
 
 ## Example
 
@@ -54,7 +50,6 @@ npm install react-lodash
 <a href="https://www.patreon.com/typicode">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
-
 
 ## API
 
