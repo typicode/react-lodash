@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collection Map (snapshot) 1`] = `
+<ul>
+  <li>
+    foo
+  </li>
+  <li>
+    bar
+  </li>
+</ul>
+`;
+
+exports[`Lang IsEqual (snapshot) 1`] = `"different"`;
+
+exports[`String UpperCase (snapshot) 1`] = `"FOO BAR"`;
