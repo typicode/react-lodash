@@ -46,7 +46,7 @@ function createComponents(docs) {
     console.log(`-- ${count++} Rendering ${doc.name}`)
     const data = render(doc)
     const filename = path.join(src, `${getComponentName(doc)}.js`)
-    fs.writeFileSync(filename, data)
+    fs.writeFileSync(filename, data, 'utf-8')
   })
 }
 
@@ -59,27 +59,22 @@ function createIndex(docs) {
   fs.writeFileSync(path.join(src, 'index.js'), data)
 }
 
-function updateREADME(docs) {
-  console.log('Update README')
+function createComponentsList(docs) {
+  console.log('Create components.md')
   const markdownList = docs
     .map(doc => `* \`<${getComponentName(doc)} />\``)
     .join('\n')
 
-  const readme = fs
-    .readFileSync('README.md', 'utf-8')
-    .replace(
-      /<!-- list -->[\s\S]*<!-- list -->/m,
-      `<!-- list -->\n${markdownList}\n<!-- list -->`
-    )
+  const data = `# Components\n\n${markdownList}`
 
-  fs.writeFileSync('README.md', readme, 'utf-8')
+  fs.writeFileSync(path.join(__dirname, '../components.md'), data, 'utf-8')
 }
 
 function main() {
   const docs = getDocs()
   createComponents(docs)
   createIndex(docs)
-  updateREADME(docs)
+  createComponentsList(docs)
 }
 
 main()
