@@ -2,8 +2,6 @@
 
 > Lodash as React components
 
-This project was created mostly out of curiosity and to explore some ideas. It's an experiment for the moment, but you're welcome to give it a try and give feedback :)
-
 ## Example
 
 Without
