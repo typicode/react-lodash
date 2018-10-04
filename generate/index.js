@@ -62,9 +62,16 @@ function createIndex(docs) {
 
 function createComponentsList(docs) {
   console.log('Create components.md')
-  const markdownList = docs.map(getComponentListItem).join('\n')
+  const groupedDocs = _.groupBy(docs, 'category')
+  const sortByName = docs => _.sortBy(docs, ['name'])
+  const sortedGroupedDocs = _.mapValues(groupedDocs, sortByName)
+  const getMarkdownList = docs => docs.map(getComponentListItem).join('\n')
+  const groupedMarkdownList = _.mapValues(sortedGroupedDocs, getMarkdownList)
+  const markdown = Object.keys(groupedMarkdownList)
+    .map(category => `## ${category}\n${groupedMarkdownList[category]}`)
+    .join('\n\n')
 
-  const data = `# Components\n\n${markdownList}`
+  const data = `# Components\n\n${markdown}`
 
   fs.writeFileSync(path.join(__dirname, '../components.md'), data, 'utf-8')
 }
