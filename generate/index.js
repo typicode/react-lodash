@@ -62,9 +62,7 @@ function createIndex(docs) {
 
 function createComponentsList(docs) {
   console.log('Create components.md')
-  const markdownList = docs
-    .map(getComponentListItem)
-    .join('\n')
+  const markdownList = docs.map(getComponentListItem).join('\n')
 
   const data = `# Components\n\n${markdownList}`
 
