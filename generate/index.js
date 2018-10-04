@@ -5,6 +5,7 @@ const del = require('del')
 const makeDir = require('make-dir')
 const jsdoc2md = require('jsdoc-to-markdown')
 const getComponentName = require('./getComponentName')
+const getComponentListItem = require('./getComponentListItem')
 const render = require('./render')
 
 const src = path.join(__dirname, '../src')
@@ -62,7 +63,7 @@ function createIndex(docs) {
 function createComponentsList(docs) {
   console.log('Create components.md')
   const markdownList = docs
-    .map(doc => `* \`<${getComponentName(doc)} />\``)
+    .map(getComponentListItem)
     .join('\n')
 
   const data = `# Components\n\n${markdownList}`
