@@ -1,10 +1,10 @@
 # react-lodash [![build status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash)
 
-> Lodash as React components
+> Use any lodash function as a React component
 
 ## Example
 
-Without
+### Without
 
 ```jsx
 import react from 'react'
@@ -20,7 +20,9 @@ array && array.length ? (
 )
 ```
 
-With (using lodash [isEmpty](https://lodash.com/docs/4.17.10#isEmpty) and [map](https://lodash.com/docs/4.17.10#isEmpty) as components)
+### With
+
+The example below uses lodash [isEmpty](https://lodash.com/docs/4.17.10#isEmpty) and [map](https://lodash.com/docs/4.17.10#isEmpty) as components.
 
 ```jsx
 import react from 'react'
@@ -49,7 +51,7 @@ npm install react-lodash
 
 ## API
 
-react-lodash uses lodash documentation to generate components, so there's a 1:1 mapping with prop names and lodash documentation.
+react-lodash uses lodash documentation for prop names.
 
 For example, let's say you want to use [`_.get`](https://lodash.com/docs/4.17.10#get). Based on lodash documentation, it takes an `object` and `path` arguments, so `<Get />` will have the same props.
 
@@ -77,7 +79,7 @@ Also every react-lodash component accepts a `children` render prop:
 </Get>
 ```
 
-For lodash functions that return a boolean, react-lodash components accepts `yes` and `no` render props:
+For lodash functions that return a boolean, react-lodash components accept `yes` and `no` render props:
 
 ```jsx
 <IsEmpty
@@ -87,13 +89,13 @@ For lodash functions that return a boolean, react-lodash components accepts `yes
 />
 ```
 
-## Components
+## Available components
 
 See [components.md](components.md) to view all available components (296).
 
 See [lodash](https://lodash.com/docs/4.17.10) documentation for prop names.
 
-Note: documentation will be improved in the future.
+__Note: documentation will be improved in the future.__
 
 ## License
 
