@@ -95,8 +95,6 @@ See [components.md](components.md) to view all available components (296).
 
 See [lodash](https://lodash.com/docs/4.17.10) documentation for prop names.
 
-__Note: documentation will be improved in the future.__
-
 ## License
 
 MIT
