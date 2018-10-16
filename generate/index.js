@@ -61,7 +61,7 @@ function createIndex(docs) {
 }
 
 function createComponentsList(docs) {
-  console.log('Create components.md')
+  console.log('Create COMPONENTS.md')
   const groupedDocs = _.groupBy(docs, 'category')
   const sortByName = docs => _.sortBy(docs, ['name'])
   const sortedGroupedDocs = _.mapValues(groupedDocs, sortByName)
@@ -73,7 +73,7 @@ function createComponentsList(docs) {
 
   const data = `# Components\n\n${markdown}`
 
-  fs.writeFileSync(path.join(__dirname, '../components.md'), data, 'utf-8')
+  fs.writeFileSync(path.join(__dirname, '../COMPONENTS.md'), data, 'utf-8')
 }
 
 function main() {
