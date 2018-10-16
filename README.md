@@ -22,7 +22,7 @@ array && array.length ? (
 
 ### With
 
-The example below uses lodash [isEmpty](https://lodash.com/docs/4.17.10#isEmpty) and [map](https://lodash.com/docs/4.17.10#isEmpty) as components.
+The example below uses lodash [_.isEmpty](https://lodash.com/docs/4.17.10#isEmpty) and [_.map](https://lodash.com/docs/4.17.10#isEmpty) as components.
 
 ```jsx
 import react from 'react'
