@@ -91,7 +91,7 @@ For lodash functions that return a boolean, react-lodash components accept `yes`
 
 ## Available components
 
-See [components.md](components.md) to view all available components (296).
+See [COMPONENTS.md](COMPONENTS.md) to view all available components (296).
 
 See [lodash](https://lodash.com/docs/4.17.10) documentation for prop names.
 
