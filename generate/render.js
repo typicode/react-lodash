@@ -22,5 +22,9 @@ module.exports = function(doc) {
     componentString = renderComponent(doc)
   }
 
-  return addDebug(componentString, doc)
+  if (process.env.NODE_ENV === 'development') {
+    return addDebug(componentString, doc)
+  } else {
+    return componentString
+  }
 }
