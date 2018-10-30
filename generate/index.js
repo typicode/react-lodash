@@ -5,7 +5,7 @@ const del = require('del')
 const makeDir = require('make-dir')
 const jsdoc2md = require('jsdoc-to-markdown')
 const getComponentName = require('./getComponentName')
-const getComponentListItem = require('./getComponentListItem')
+const getComponentList = require('./getComponentList')
 const render = require('./render')
 
 const src = path.join(__dirname, '../src')
@@ -60,27 +60,26 @@ function createIndex(docs) {
   fs.writeFileSync(path.join(src, 'index.js'), data)
 }
 
-function createComponentsList(docs) {
-  console.log('Create COMPONENTS.md')
-  const groupedDocs = _.groupBy(docs, 'category')
-  const sortByName = docs => _.sortBy(docs, ['name'])
-  const sortedGroupedDocs = _.mapValues(groupedDocs, sortByName)
-  const getMarkdownList = docs => docs.map(getComponentListItem).join('\n')
-  const groupedMarkdownList = _.mapValues(sortedGroupedDocs, getMarkdownList)
-  const markdown = Object.keys(groupedMarkdownList)
-    .map(category => `## ${category}\n${groupedMarkdownList[category]}`)
-    .join('\n\n')
+function updateREADME(docs) {
+  console.log('Update README')
 
-  const data = `# Components\n\n${markdown}`
+  const componentList = getComponentList(docs)
 
-  fs.writeFileSync(path.join(__dirname, '../COMPONENTS.md'), data, 'utf-8')
+  const readme = fs
+    .readFileSync('README.md', 'utf-8')
+    .replace(
+      /<!-- list -->[\s\S]*<!-- list -->/m,
+      `<!-- list -->\n${componentList}\n<!-- list -->`
+    )
+
+  fs.writeFileSync('README.md', readme, 'utf-8')
 }
 
 function main() {
   const docs = getDocs()
   createComponents(docs)
   createIndex(docs)
-  createComponentsList(docs)
+  updateREADME(docs)
 }
 
 main()
