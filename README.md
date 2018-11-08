@@ -109,6 +109,8 @@ import IsEmpty from 'react-lodash/lib/IsEmpty'
 
 Below you'll find the 296 available components. For detailed documentation, you can visit [https://lodash.com/docs](https://lodash.com/docs)
 
+_Note: Since `react-lodash` is 1:1 mapping of `lodash`, maybe not all components will be relevant._
+
 <!-- list -->
 ### Array
 * `<Chunk array={} size={} />` → [_.chunk](https://lodash.com/docs/#chunk)
