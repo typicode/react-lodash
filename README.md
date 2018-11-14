@@ -41,7 +41,7 @@ import { IsEmpty, Map } from "react-lodash"
 
 ## Demo
 
-You can also try `react-lodash` on [CodeSandbox](https://codesandbox.io/s/r4lv71wx9q) 😉
+➡️ You can also try `react-lodash` on [CodeSandbox](https://codesandbox.io/s/r4lv71wx9q)
 
 ## Install
 
