@@ -1,10 +1,10 @@
-# react-lodash [![build status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash)
+# react-lodash [![build status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash) ![](https://img.shields.io/badge/status-experiment-orange.svg)
 
 > Use any lodash function as a React component
 
 ## Introduction
 
-`react-lodash` came out of curiosity 🧪
+`react-lodash` came out of curiosity.
 
 I wanted to know how things could be rewritten with `lodash` as components and if generating them directly from `lodash` JSDoc was possible.
 
