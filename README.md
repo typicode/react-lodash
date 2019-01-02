@@ -1,4 +1,4 @@
-# react-lodash [![build status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash) ![](https://img.shields.io/badge/status-experiment-orange.svg)
+# react-lodash [![build status](https://travis-ci.com/typicode/react-lodash.svg?branch=master)](https://travis-ci.com/typicode/react-lodash) [![npm](https://img.shields.io/npm/v/react-lodash.svg)](https://www.npmjs.com/package/react-lodash) ![](https://img.shields.io/badge/status-experiment-ff69b4.svg)
 
 > Use any lodash function as a React component
 
@@ -42,6 +42,8 @@ import { IsEmpty, Map } from "react-lodash"
 ## Demo
 
 You can play with `react-lodash` on [CodeSandbox](https://codesandbox.io/s/r4lv71wx9q)
+
+[![Edit react-lodash-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r4lv71wx9q)
 
 ## Install
 
