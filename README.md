@@ -2,19 +2,27 @@
 
 > Use any lodash function as a React component
 
-## Why?
+## Introduction
+
+> Why?
 
 I wanted to know how things could be rewritten with `lodash` as components and if generating them directly from `lodash` JSDoc was possible.
 
-The answer to the latter is obviously yes. `react-lodash` is therefore a 1:1 mapping with `lodash` API and all components are generated using `npm run generate`.
+The answer to the latter is obviously yes (otherwise, this repo wouldn't exist 😉). `react-lodash` is therefore a 1:1 mapping with `lodash` API and all components are generated using `npm run generate`.
 
 It also means that not all `react-lodash` components will make sense in a React app. Particularly the ones that mutate data.
 
-### Should you use it?
+> Does it work?
+
+Yes, you can try it on [CodeSandbox](https://codesandbox.io/s/r4lv71wx9q).
+
+> Should you use it?
 
 If you have a personal/small project and want to play with `react-lodash`, feel free. Some components might be useful or provide some interesting features.
 
 For bigger projects, you should probably stick to plain JS as it's more familiar and works better with typing systems.
+
+In any case, I had fun building this project and I hope you'll find the idea entertaining :)
 
 ## Example
 
